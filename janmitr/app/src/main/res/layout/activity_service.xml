@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomeActivity"
+    android:id="@+id/drawerlayout"
+    android:fitsSystemWindows="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <include layout="@layout/includesidebarheader"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginRight="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_margin="5dp">
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:layout_margin="10dp"
+                    app:cardElevation="5dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:orientation="horizontal"
+                            android:gravity="center">
+                            <TextView
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="start"
+                                android:text="Coordinator"
+                                android:textSize="20dp"
+                                android:textColor="@color/textHeading"
+                                android:autoSizeMaxTextSize="100sp"
+                                android:autoSizeMinTextSize="12sp"
+                                app:autoSizeTextType="uniform"
+                                android:textStyle="bold"
+                                style="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+                                />
+                            <TextView
+                                style="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:autoSizeMaxTextSize="100sp"
+                                android:autoSizeMinTextSize="12sp"
+                                app:autoSizeTextType="uniform"
+                                android:gravity="right"
+                                android:textSize="20dp"
+                                android:textColor="@color/textHeading"
+                                android:text="Family Member"
+                                android:textStyle="bold"
+                                ></TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="20dp"
+                            >
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/ic_email"
+                                ></ImageView>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="10dp"
+                                android:text="ashish@gmail.com"
+                                android:autoSizeMaxTextSize="100sp"
+                                android:autoSizeMinTextSize="12sp"
+                                app:autoSizeTextType="uniform"
+                                ></TextView>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            >
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/ic_call"
+                                ></ImageView>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_weight="1"
+                                        android:layout_height="30dp"
+                                        android:layout_marginLeft="10dp"
+
+                                        android:text="7891531841"
+                                        android:autoSizeMaxTextSize="100sp"
+                                        android:autoSizeMinTextSize="12sp"
+                                        app:autoSizeTextType="uniform"
+                                        ></TextView>
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_weight="1"
+                                        android:layout_height="wrap_content">
+
+                                        <Button
+                                            android:layout_width="0dp"
+                                            android:layout_height="40dp"
+                                            android:layout_weight="50"
+                                            android:text="Explore"
+                                            android:drawableEnd="@drawable/explore_icon"
+                                            app:backgroundTint="@color/textHeading"
+                                            android:textColor="@color/white"
+                                            android:textColorHighlight="@color/textHeading">
+
+                                        </Button>
+
+                                    </LinearLayout>
+                            </LinearLayout>
+
+
+
+
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:gravity="left">
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="5dp"
+                                android:autoSizeMaxTextSize="100sp"
+                                android:autoSizeMinTextSize="12sp"
+                                app:autoSizeTextType="uniform"
+                                android:background="@color/red"
+                                android:gravity="center"
+                                android:radius="100dp"
+                                android:text="Status"
+                                android:textColor="@color/white"
+                                ></TextView>
+                            <TextView
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="end"
+                                android:text="Thursday,16Jun"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout >
+
+    <include layout="@layout/includesidebarmenu"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>

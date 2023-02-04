@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    tools:showIn="navigation_view">
+        <item android:id="@+id/home_menu"
+            android:icon="@drawable/home_vector"
+            app:showAsAction="ifRoom|withText"
+            android:title="Home">
+         </item>
+        <!--
+        <item android:id="@+id/service_menu"
+            android:icon="@drawable/services"
+
+            app:showAsAction="ifRoom|withText"
+            android:title="Service">
+        </item>
+
+        <item android:id="@+id/member_menu"
+            android:icon="@drawable/member"
+            app:showAsAction="ifRoom|withText"
+            android:title="Member">
+        </item>-->
+        <item android:id="@+id/coordinato_menu"
+            android:icon="@drawable/member"
+            app:showAsAction="ifRoom|withText"
+            android:title="Coordinator">
+        </item>
+</menu>

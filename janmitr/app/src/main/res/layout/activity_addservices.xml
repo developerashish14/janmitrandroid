@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddservicesActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/green">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Services"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"/>
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="10dp"
+        android:text="Add Services"
+        android:textColor="@color/red"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"/>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+        android:id="@+id/members_list_field">
+
+        <AutoCompleteTextView
+            android:id="@+id/members_list"
+            android:layout_width="298dp"
+            android:layout_height="49dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_text_bg2"
+            android:drawablePadding="10dp"
+            android:elevation="3dp"
+            android:hint="Members List"
+            android:inputType="none"
+            android:padding="15dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+        android:id="@+id/flag_list">
+
+        <AutoCompleteTextView
+            android:id="@+id/flag"
+            android:layout_width="298dp"
+            android:layout_height="49dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_text_bg2"
+            android:drawablePadding="10dp"
+            android:elevation="3dp"
+            android:hint="Flag"
+            android:inputType="none"
+            android:padding="15dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+        android:id="@+id/type_list">
+
+        <AutoCompleteTextView
+            android:id="@+id/type"
+            android:layout_width="298dp"
+            android:layout_height="49dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_text_bg2"
+            android:drawablePadding="10dp"
+            android:elevation="3dp"
+            android:hint="Type"
+            android:inputType="none"
+            android:padding="15dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/remark_list">
+
+        <AutoCompleteTextView
+            android:id="@+id/remark"
+            android:layout_width="298dp"
+            android:layout_height="49dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_text_bg2"
+            android:drawablePadding="10dp"
+            android:elevation="3dp"
+            android:hint="Remark"
+            android:padding="15dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:onClick="addservices"
+        android:background="@drawable/button_bg"
+        android:text="Add"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:layout_gravity="center" />
+
+
+</LinearLayout>

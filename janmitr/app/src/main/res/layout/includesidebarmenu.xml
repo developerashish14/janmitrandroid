@@ -1,0 +1,13 @@
+<com.google.android.material.navigation.NavigationView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_view"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    app:headerLayout="@layout/headerfile"
+    app:menu="@menu/sidemenuname"
+    app:itemIconTint="@drawable/navigation_selector"
+    app:itemTextColor="@drawable/navigation_view_item_selected"
+    tools:ignore="MissingConstraints">
+    </com.google.android.material.navigation.NavigationView>

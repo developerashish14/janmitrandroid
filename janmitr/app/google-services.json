@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "925837189680",
+    "project_id": "janmitr",
+    "storage_bucket": "janmitr.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:925837189680:android:f8926f33a933c6f14103f5",
+        "android_client_info": {
+          "package_name": "com.example.janmitr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "925837189680-tg8ms33oi843la5udhipiofbmb8qhm4h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArmmHB2Im7x_zCj1-pIupo_b5bm5kKDkw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "925837189680-tg8ms33oi843la5udhipiofbmb8qhm4h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

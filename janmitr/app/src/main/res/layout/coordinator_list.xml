@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_weight="10"
+                            android:src="@drawable/ic_baseline_name"
+                            ></ImageView>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_weight="90"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="10dp"
+                            android:id="@+id/lblCoordinatorName"
+                            android:text="Ashish Rawat"
+                            android:textStyle="normal"
+                            android:textColor="@color/textHeading"
+                            android:autoSizeMaxTextSize="100sp"
+                            android:autoSizeMinTextSize="12sp"
+                            app:autoSizeTextType="uniform"
+                            ></TextView>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_weight="10"
+                            android:src="@drawable/ic_call"
+                            ></ImageView>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_weight="90"
+                            android:id="@+id/lblCoordinatorMobile"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="10dp"
+                            android:text="7891531841"
+                            android:textStyle="normal"
+                            android:textColor="@color/textHeading"
+                            android:autoSizeMaxTextSize="100sp"
+                            android:autoSizeMinTextSize="12sp"
+                            app:autoSizeTextType="uniform"
+                            ></TextView>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    >
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="100dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Members"
+                        android:background="@drawable/button_bg"
+                        android:textAllCaps="false"
+                        android:textSize="10sp"
+                        app:backgroundTint="@color/textHeading"
+                        android:textColor="@color/white"
+                        android:id="@+id/OnClickMember"
+                        android:onClick="clickOnMemberlist"
+
+                        android:textColorHighlight="@color/textHeading"
+                        >
+
+                    </com.google.android.material.button.MaterialButton>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="10"
+                    android:src="@drawable/ic_baseline_location"
+                    ></ImageView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="90"
+                    android:layout_height="23dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/lblCoordinatorAddress"
+                    android:layout_marginRight="10dp"
+                    android:text="42,mayur vihar nangel jaisa bohra jaipur"
+                    android:textStyle="normal"
+                    android:textColor="@color/black"
+                    android:autoSizeMaxTextSize="100sp"
+                    android:autoSizeMinTextSize="12sp"
+                    app:autoSizeTextType="uniform"
+                    ></TextView>
+            </LinearLayout>
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+</LinearLayout>
